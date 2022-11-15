@@ -2,4 +2,8 @@
 layout: base.njk
 title: Hello World
 ---
+{% for image in images %}
 
+<img src="/img/{{image}}"/>
+
+{% endfor %}
