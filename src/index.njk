@@ -1,14 +1,12 @@
 ---
 layout: base.njk
-title: The Gallery
+title: Kevin Xu | Generative Art
 ---
-
-{# <h1>hi</h1> #}
 
 <div class="gallery">
     {% for image in images %}
     <div class="panel">
-        <img src="/img/{{image}}"/>
+        <img src="/img/{{image}}" loading="lazy"/>
         <div class="title">{{image | replace(".jpg", "")}}</div>
     </div>
     {% endfor %}

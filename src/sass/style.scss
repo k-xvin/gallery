@@ -1,20 +1,34 @@
 @import "colors.scss";
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    margin: 0;
+    margin: 5vmin 15vmin;
     font-family: 'Open Sans', sans-serif;
     color: $color-text;
     background-color: $color-bg;
-    // text-align: center;
+}
+
+a {
+    color: $color-text;
+    // text-decoration: none;
+}
+
+.header {
+    margin: 2rem 0;
+}
+.footer {
 }
 
 .gallery {
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 5vmin;
-    gap: 5rem;
+    
+    // padding: 5vmin;
+    // gap: 5rem;
 }
 
 .panel {
@@ -22,11 +36,12 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+    padding: 2rem;
     
     img {
-        min-width: 160px;
-        min-height: 160px;
-        max-width: 30vw;
+        min-width: 260px;
+        min-height: 260px;
+        max-width: 40vw;
 
         filter: drop-shadow(0px 1px 5px black);
     }
@@ -46,6 +61,7 @@ body {
     .title::before{
         content: "⎯⎯⎯⎯⎯";
         text-align: center;
+        color: gold;
     }
 
 }

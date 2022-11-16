@@ -10,12 +10,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
 </head>
-<body>
-	{# <header>
-		<h1>{{ title }}</h1>
-	</header> #}
+<body id="main">
+    <header class="header">
+        <h1>Kevin Xu | Generative Art</h1>
+        <a href="https://kxvin.com">Back to Main Site</a>
+    </header>
+	
 	<main>
 	{{ content | safe }}
 	</main>
+
+    <footer class="footer">
+        <a href="#main">Back to top</a>
+    </footer>
 </body>
 </html>
