@@ -1,4 +1,26 @@
+@import "colors.scss";
+
 body {
   font-family: sans-serif;
-  background-color: #f9f9f9;
+  color: $color-text;
+  background-color: $color-bg;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+img {
+    // max-width: 75vw;
+    // max-height: 50vh;
+    // min-height: 50vh;
+
+    height: 75vmin;
+
+    border: 15px solid $color-text;
+    box-shadow: 0px 1px 3px black;
 }
