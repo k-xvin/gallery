@@ -1,9 +1,15 @@
 ---
 layout: base.njk
-title: Hello World
+title: The Gallery
 ---
+
+{# <h1>hi</h1> #}
+
 <div class="gallery">
     {% for image in images %}
-    <img src="/img/{{image}}"/>
+    <div class="panel">
+        <img src="/img/{{image}}"/>
+        <div class="title">{{image | replace(".jpg", "")}}</div>
+    </div>
     {% endfor %}
 </div>
