@@ -6,8 +6,8 @@ title: Kevin Xu | Generative Art
 <div class="gallery">
     {% for image in images %}
     <div class="panel">
-        <img src="/img/{{image}}" loading="lazy"/>
-        <div class="title">{{image | replace(".jpg", "")}}</div>
+        <a href="/img/{{image}}"><img class="panel-img" src="/img/{{image}}" loading="lazy"/></a>
+        <div class="title">{{image | replace(".jpg", "") | replace(".gif", "") | replace(".png", "")}}</div>
     </div>
     {% endfor %}
 </div>

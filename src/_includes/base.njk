@@ -13,7 +13,18 @@
 <body id="main">
     <header class="header">
         <h1>Kevin Xu | Generative Art</h1>
-        <a href="https://kxvin.com">Back to Main Site</a>
+        <a href="https://www.kxvin.com/art/">Back to Main Site</a>
+        <div class="slider">
+            <input type="range" min="10" max="50" value="30" step="5" oninput="changeWidths(value)"></input>
+        </div>
+        <script>
+            function changeWidths(value){
+                //console.log(document.querySelectorAll(".panel-img"));
+                document.querySelectorAll(".panel-img").forEach((e) => {
+                    e.style.maxWidth = value + "vw";
+                });
+            }
+        </script>
     </header>
 	
 	<main>
