@@ -1,4 +1,5 @@
-@import "colors.scss";
+$color-text: #171a25;
+$color-bg: #DBDFD8;
 
 body {
     margin: 0;
@@ -16,7 +17,6 @@ body {
     padding: 5vmin;
     gap: 5rem;
 }
-
 
 .panel {
     display: flex;
