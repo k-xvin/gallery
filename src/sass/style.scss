@@ -28,13 +28,10 @@ a {
 }
 
 .gallery {
-    display: flex;
-    // align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-    // padding: 5vmin;
-    // gap: 5rem;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
 }
 
 .panel {
@@ -42,12 +39,12 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    padding: 2rem;
     
     img {
         min-width: 260px;
         min-height: 260px;
-        max-width: 40vw;
+        // max-width: 40vw;
+        width: 100%;
 
         object-fit: contain;
 
